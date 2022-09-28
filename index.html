@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery AJAX Call App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <p>Covid19 API Tracker</p>
+    </nav>
+    <section class="min-height">
+        <div class="container-fluid no-padding">
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2 left-area">
+                    <h2>World-wide Data</h2>
+                    <div class="total-records"></div>
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-8 middle-area">
+                    <h2>Graphical Representation of Top 5 Most Effected State & District</h2>
+                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 right-area">
+                    <h2>India's State-wise Data</h2>
+                    <select id="statesDropDown">
+                        <option>Select the State Code</option>
+                    </select>
+                    <div id="state-records"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+    <script src="./graph.js"></script>
+    <script src="./canvasjs.min.js"></script>
+</body>
+
+</html>
